@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: raw
+    database: superb-virtue-305801
+    tables:
+      - name: dbt-tutorialstripepayment
+        description: Raw payment data.
+        columns:
+            - name: id
+              description: Primary key for customers.
+              tests:
+                - unique
+                - not_null
